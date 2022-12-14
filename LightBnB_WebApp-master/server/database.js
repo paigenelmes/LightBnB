@@ -197,7 +197,6 @@ const addProperty = function(property) {
       property.number_of_bathrooms, property.number_of_bedrooms])
     .then((result) => {
       if (result) {
-        console.log("NEW PROPERTY:", result.rows[0]);
         return result.rows[0];
       } else {
         return null;
