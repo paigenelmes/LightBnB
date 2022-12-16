@@ -11,12 +11,51 @@ Whether you are a homeowner or a globe-trotter, Lighthouse BnB is here to make y
 
 Follow the instructions below to get started with Lighthouse BnB.
 
-1. cd into the LightBnB_WebApp directory.
-2. Install any dependencies with npm i.
-3. Run the app by typing npm run local.
-4. View the app in your web browser at localhost:3000.
+1. Create a new repository using this repository as a template.
+2. Clone your repository to your local device.
+3. Install any dependencies with the `npm i` command.
+4. cd into the LightBnB_WebApp directory.
+5. Run the app by running the `npm run local` command.
+6. View the app in your web browser at `localhost:3000`.
 
-NOTE: If you're having trouble, you may need to have npx installed first. Try running npm install -g npx.
+*NOTE: If you're having trouble, you may need to have npx installed first. Try running the command `npm install -g npx`.*
 
 ## Screenshots
 
+![After logging in, you can easily find all of your Lighthouse BnB reservations.](https://github.com/paigenelmes/LightBnB/blob/main/images/screenshots/lightbnb_my_reservations.png)
+*After logging in, you can easily find all of your Lighthouse BnB reservations.*
+
+![You can also view all of your Lighthouse BnB listings.](https://github.com/paigenelmes/LightBnB/blob/main/images/screenshots/lightbnb_my_listings.png)
+*You can also view all of your Lighthouse BnB listings.*
+
+![Seach for the perfect place to stay! Filter results by city, cost, and rating.](https://github.com/paigenelmes/LightBnB/blob/main/images/screenshots/lightbnb_search.png)
+*Seach for the perfect place to stay! Filter results by city, cost, and rating.*
+
+![Creating a new listing is easy, too. Simply fill out this form and you're on your way!](https://github.com/paigenelmes/LightBnB/blob/main/images/screenshots/lightbnb_create_listing.png)
+*Creating a new listing is easy, too. Simply fill out this form and you're on your way!.*
+
+## Project Structure
+
+├── public
+│   ├── index.html
+│   ├── javascript
+│   │   ├── components 
+│   │   │   ├── header.js
+│   │   │   ├── login_form.js
+│   │   │   ├── new_property_form.js
+│   │   │   ├── property_listing.js
+│   │   │   ├── property_listings.js
+│   │   │   ├── search_form.js
+│   │   │   └── signup_form.js
+│   │   ├── index.js
+│   │   ├── libraries
+│   │   ├── network.js
+│   │   └── views_manager.js
+│   └── styles
+├── sass
+└── server
+  ├── apiRoutes.js
+  ├── database.js
+  ├── json
+  ├── server.js
+  └── userRoutes.js
