@@ -139,8 +139,8 @@ const getAllProperties = (options, limit = 10) => {
   }
 
   if (options.owner_id) {
-    queryParams.push(`%${options.owner_id}%`);
-    queryString += `AND owner_id LIKE $${queryParams.length}`;
+    queryParams.push(`${options.owner_id}`);
+    queryString += `AND owner_id = $${queryParams.length}`;
   }
 
   if (options.minimum_price_per_night) {
